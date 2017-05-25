@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+label.top-label {
+    display: block;
+}
+
+.button-wrapper {
+    margin: 10px 5px;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+.form-control {
+    border: 2px solid red;
+    background: #c7c7c7;
+    border-radius: 10px;
+    outline-color: #ffffff;
+    outline-style: hidden;
+}

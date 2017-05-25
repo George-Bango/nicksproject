@@ -4,7 +4,8 @@
         <title>Nick's Project 1</title>
         <link rel="stylesheet" href="css/table.css" type="text/css">
         <link rel="stylesheet" href="css/style.css" type="text/css">
-        <link rel="stylesheet" href="css/nav.css" tyoe="text/css">
+        <link rel="stylesheet" href="css/nav.css" type="text/css">
+        <link rel="stylesheet" href="css/form.css" type="text/css">
     </head>
     <body>
         <header id="header">
@@ -83,20 +84,73 @@
         <div id="table">
             <table style="width:80%">
                 <caption>Bitches attributes</caption>
-                <tr>
-                    <th>Name</th>
-                    <th>Boobies</th>
-                    <th>Butthole</th>
-                    <th>Pussy</th>
-                </tr>
-                <tr>
-                    <td>Jill</td>
-                    <td>Small</td>
-                    <td>Loose</td>
-                    <td>Tight</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Boobies</th>
+                        <th>Butthole</th>
+                        <th>Pussy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jill</td>
+                        <td>Small</td>
+                        <td>Loose</td>
+                        <td>Tight</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
+    <form name="Formey" method="get" action="#" role="form">
+        <div class="form-group">
+            <label for="box1" class="top-label">Fuckbox1</label>
+            <input type="text" name="Box1" id="box1" value="This Box 1" class="form-control" maxlength="9" required title="fuck off" placeholder="Boxey1">
+        </div>
+        <div class="form-group">
+            <label for="box2" class="top-label">Fuckbox2</label>
+            <input type="text" name="Box2" id="box2" value="This Box 2" class="form-control" maxlength="9" required title="fuck off" placeholder="Boxey2">
+        </div>
+        <div class="form-group">
+            <label>
+                <input type="checkbox" name="checkbox1[]" id="checkbox1-boner" value="Boner"> Boner
+            </label>
+            <label>
+                <input type="checkbox" name="checkbox1[]" id="checkbox1-flaccid" value="Flaccid"> Flaccid
+            </label>
+        </div>
+        <div class="form-group">
+            <label for="genitalia">Genitalia</label>
+            <select name="genitalia[]" id="genitalia" class="form-control" required multiple aria-multiselectable="true">
+                <option></option>
+                <optgroup label="Sex Parts">
+                    <option value="Pussy">
+                        Pussy
+                    </option>
+                    <option value="Dick">
+                        Dick
+                    </option>
+                </optgroup>
+                <optgroup label="Smelly">
+                    <option value="Feet">
+                        Feet
+                    </option>
+                </optgroup>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="inches">Inches</label>
+            <input type="number" name="inches" class="form-control" id="inches" min="1" max="7" step=".5">
+        </div>
+        <div class="form-group">
+            <label><input type="radio" name="tightness" value="Tight"> Tight</label>
+            <label><input type="radio" name="tightness" value="Average"> Average</label>
+            <label><input type="radio" name="tightness" value="Loose"> Loose</label>
+        </div>
+        <div class="button-wrapper">
+            <input type="submit" value="This makes you orgasm">
+        </div>
+    </form>
     <footer id="footer">
         <p class="copyright">This is Nick's Website &copy; 2017</p>
     </footer>
